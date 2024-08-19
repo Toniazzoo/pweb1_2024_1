@@ -41,21 +41,19 @@
 
 <div class="col">
 
-  <form action="AlunoForm.php" method="post">
+  <form action="UserRegister.php" method="post">
 
-    <h3>Formulário Aluno</h3>
+    <h3>Registrar Aluno</h3>
     
     <div class="mb-3">
       <input 
         type="hidden"  
-        name="id" 
-        value="<?php echo !empty($data->id) ? $data->id : "" ?>">
+        name="id" >
       <label for="nome" class="form-label">Nome</label>
       <input 
         type="text" 
         class="form-control" 
-        name="nome" 
-        value="<?php echo !empty($data->nome) ? $data->nome : "" ?>" 
+        name="nome"  
         placeholder="Nome">
     </div>
 
@@ -65,18 +63,16 @@
         type="text" 
         class="form-control" 
         name="cpf" 
-        value="<?php echo !empty($data->cpf) ? $data->cpf : "" ?>" 
         placeholder="888.888.888-88">
     </div>
 
     <div class="mb-3">
-      <label for="telefone" class="form-label">Telefone</label>
+      <label for="senha" class="form-label">Senha</label>
       <input 
-        type="text" 
+        type="password" 
         class="form-control" 
-        name="telefone"
-        value="<?php echo !empty($data->telefone) ? $data->telefone : "" ?>"  
-        placeholder="(49) 99999-9999">
+        name="senha"
+        placeholder="*********">
     </div>
 
     <button type="submit" class="btn btn-success">Salvar</button>
